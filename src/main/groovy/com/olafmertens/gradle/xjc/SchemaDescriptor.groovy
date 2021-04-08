@@ -1,4 +1,4 @@
-package org.hibernate.build.gradle.xjc
+package com.olafmertens.gradle.xjc
 
 import org.gradle.api.Project
 

@@ -53,7 +53,7 @@ under this directory).  You can instruct the plugin to use a different directory
 The plugin makes use of a Gradle feature called a `NamedDomainObjectContainer`.  Basically, it allows dynamic
 extension of the DSL for in an `a posteriori` manner.  For what its worth, this is how many things in Gradle itself
 (like Configurations, SourceSets, etc) work.  The plugin defines a `schemas` NamedDomainObjectContainer under the xjc
-extension.  The type of the domain objects in this container (of type `org.hibernate.build.gradle.xjc.SchemaDescriptor`)
+extension.  The type of the domain objects in this container (of type `SchemaDescriptor`)
 describe the processing for a particular XSD.  Let see an example:
 
     xjc {

@@ -1,4 +1,4 @@
-package org.hibernate.build.gradle.xjc
+package com.olafmertens.gradle.xjc
 
 import org.gradle.api.NamedDomainObjectContainer
 import org.gradle.api.Project
@@ -11,7 +11,6 @@ class XjcExtension {
 
 	boolean xjcConfigurationSupplementsDefaultDependencies = true
 
-//	String xjcTaskName = 'com.sun.tools.xjc.XJCTask'
 	String xjcTaskName = 'org.jvnet.jaxb2_commons.xjc.XJC2Task'
 
 	File outputDir

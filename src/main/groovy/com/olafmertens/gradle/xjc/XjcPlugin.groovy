@@ -1,4 +1,4 @@
-package org.hibernate.build.gradle.xjc
+package com.olafmertens.gradle.xjc
 
 import org.gradle.api.Action
 import org.gradle.api.Plugin
@@ -63,6 +63,7 @@ class XjcPlugin implements Plugin<Project> {
 										target: descriptor.jaxbVersion,
 										extension: 'true') {
 									arg line: "-npa "
+									arg line: "-encoding UTF-8 "
 									if ( !descriptor.xjcExtensions.empty ) {
 										arg line: descriptor.xjcExtensions.collect { "-X${it}" }.join( " " )
 									}
